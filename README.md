@@ -27,8 +27,4 @@ Demonstrates normalization from unnormalized table → 1NF → 2NF → 3NF, with
 
 ### 1. Start MySQL 8.0 Container
 ```bash
-docker run --name college_clubs_db \
-  -e MYSQL_ROOT_PASSWORD=root123 \
-  -e MYSQL_DATABASE=college_clubs \
-  -d -p 3307:3306 \
-  mysql:8.0
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --name mysql mysql:8.0
