@@ -1,29 +1,26 @@
-# College Club Management System
+# College Club Membership Management System
 
-Normalized MySQL database for managing college student club memberships (Music Club, Sports Club, etc.).  
-Demonstrates normalization from unnormalized table → 1NF → 2NF → 3NF, with many-to-many relationship via a Membership table.
+This project demonstrates database design and normalization for managing student club memberships in a college environment. It includes normalization steps from 1NF to 3NF, SQL scripts, and Docker container setup for a MySQL database.
 
-## ER Diagram
+## Repository Contents
 
-![ER Diagram](ER_Diagram.png)
+- **docker-compose.yml** - Runs the MySQL database using Docker
+- **sql/** - SQL scripts for schema creation, sample data, and queries
+- **diagrams/** - ER Diagram showing the relationship between entities
+- **docs/** - Normalization explanation
 
-*(If image doesn't display yet — upload it soon via "Add file → Upload files")*
+## How to Run
 
-**Relationships**  
-- One **Student** can join many **Clubs**  
-- One **Club** can have many **Students**  
-- Junction table: **Membership** (StudentID + ClubID as composite PK, plus JoinDate)
+### Requirements:
+- Docker
+- Docker Compose
 
-## Database Schema (3NF)
+### Steps:
 
-- **Student** (StudentID PK, StudentName, Email)  
-- **Club** (ClubID PK, ClubName, ClubRoom, ClubMentor)  
-- **Membership** (StudentID FK, ClubID FK, JoinDate)
-
-## Docker + MySQL Setup
-
-### Prerequisites
-- Docker installed and running on your machine
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/noosootenog/College-Club-Management-System.git
+   cd College-Club-Management-System
 
 ### 1. Start MySQL 8.0 Container
 ```bash
