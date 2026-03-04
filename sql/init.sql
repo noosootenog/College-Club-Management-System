@@ -133,7 +133,6 @@ ORDER BY s.StudentName, m.JoinDate;
 
 -- Verification counts
 
-
 SELECT 'Students'   AS TableName, COUNT(*) AS RowCount FROM Student
 UNION ALL
 SELECT 'Clubs',      COUNT(*) FROM Club

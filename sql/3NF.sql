@@ -38,8 +38,8 @@ INSERT IGNORE INTO Club (ClubName, ClubRoom, ClubMentor) VALUES
 ('Coding Club',  'Lab1', 'Mr. Anil');
 
 INSERT IGNORE INTO Membership (StudentID, ClubID, JoinDate) VALUES
-(1, 1, '2024-10-01'),  -- Asha → Music
-(2, 2, '2024-12-01'),  -- Bikash → Sports
+(1, 1, '2024-01-10'),  -- Asha → Music
+(2, 2, '2024-01-12'),  -- Bikash → Sports
 (1, 2, '2024-01-15'),  -- Asha → Sports
 (3, 1, '2024-01-20'),  -- Nisha → Music
 (4, 3, '2024-01-18'),  -- Rohan → Drama
