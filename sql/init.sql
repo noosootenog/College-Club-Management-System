@@ -1,4 +1,3 @@
-
 -- 1. Create the database
 
 USE CollegeClubDB;
